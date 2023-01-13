@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>带鱼屏解决方案 | 科技鲨鱼TechShark🦈</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/Shark.png">
+    <script>
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?74388d1aeea730c846f16e94f6b01a2d";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+            </script>
+    <meta name="description" content="开箱即用的大屏可视化解决方案">
+    
+    <link rel="preload" href="/assets/css/0.styles.6f3abd57.css" as="style"><link rel="preload" href="/assets/js/app.cedd86b0.js" as="script"><link rel="preload" href="/assets/js/2.2671238c.js" as="script"><link rel="preload" href="/assets/js/3.704c29b5.js" as="script"><link rel="preload" href="/assets/js/11.e751dddd.js" as="script">
+    <link rel="stylesheet" href="/assets/css/0.styles.6f3abd57.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">科技鲨鱼TechShark🦈</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">🏠home</a></div><div class="nav-item"><a href="/doc/" class="nav-link router-link-active">📒content</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">🏠home</a></div><div class="nav-item"><a href="/doc/" class="nav-link router-link-active">📒content</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0" style="padding-top:10px;"><p class="sidebar-heading open"><span>入门一览</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/doc/0.html" class="sidebar-link">项目入门介绍</a></li><li><a href="/doc/1.html" class="sidebar-link">数据可视化开箱方案-vue</a></li><li><a href="/doc/2.html" class="sidebar-link">大屏UI设计参考</a></li><li><a href="/doc/3.html" class="sidebar-link">特效组件</a></li><li><a href="/doc/4.html" aria-current="page" class="active sidebar-link">带鱼屏解决方案</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/doc/4.html#带鱼屏解决方案" class="sidebar-link">带鱼屏解决方案</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0" style="padding-top:;"><p class="sidebar-heading"><span>extra</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/doc/99.html" class="sidebar-link">拓展项目</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="带鱼屏解决方案"><a href="#带鱼屏解决方案" class="header-anchor">#</a> 带鱼屏解决方案</h2> <h3 id="其他分辨率和比例"><a href="#其他分辨率和比例" class="header-anchor">#</a> 其他分辨率和比例</h3> <p>由于大屏页面组件化程度较高和复杂，如果分辨率不能满足，建议优先满足</p> <p>32:9</p> <p>使用开发模式进行调试和适配，在index.scss页面修改整体的长宽比，在进行修改。默认50%的缩放，如果按照设计稿的话，需要/2才是需要展示的分辨率</p> <h3 id="调试方式"><a href="#调试方式" class="header-anchor">#</a> 调试方式</h3> <p>使用chorme自带的devtools进行调试(默认会使用transform:scale这个属性进行缩放)，通过计算页面比例和像素比例，调整缩放程度</p> <p>页面预置了若干比例的大屏 供用户选择</p> <p>核心指标如下  一览7680*2160的 默认成一半比例像素 进行开发</p> <p>todo 一个 示意图 免费的 图床  解决 方案 来一个</p> <p>todo 贴图</p> <h3 id="iframe方式引入bmap"><a href="#iframe方式引入bmap" class="header-anchor">#</a> iframe方式引入Bmap</h3> <p>由于地图可能不是vue版本，自定义组件有比较也比较复杂，可以通过外部打包的方式引入到项目中，通过iframe，定义一个穿透事件，让用户可以操作。
+如果需要组件间通讯，请使用</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//子组件使用</span>
+window<span class="token punctuation">.</span>parent<span class="token punctuation">.</span><span class="token function">postMessage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>refresh<span class="token operator">:</span>namelist<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token string">'*'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//在父组件</span>
+window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'message'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>functionName<span class="token punctuation">)</span>
+
+</code></pre></div><p>父组件监听到变化进行响应式操作，由于跨了框架(原生html--vue)，使用之前请确保兼容性良好.</p> <h3 id="直接用echarts"><a href="#直接用echarts" class="header-anchor">#</a> 直接用echarts</h3> <p>原声web GL进行地图的配置引入，不适用于高复杂度的页面链接</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/doc/3.html" class="prev">
+          特效组件
+        </a></span> <span class="next"><a href="/doc/99.html">
+          拓展项目
+        </a>
+        →
+      </span></p></div>  <div class="gitalk-container theme-default-content"><div id="gitalk-container" class="content"></div></div></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.cedd86b0.js" defer></script><script src="/assets/js/2.2671238c.js" defer></script><script src="/assets/js/3.704c29b5.js" defer></script><script src="/assets/js/11.e751dddd.js" defer></script>
+  </body>
+</html>
